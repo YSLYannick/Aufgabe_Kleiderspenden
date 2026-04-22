@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kleiderspenden-Registrierung</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+  <!-- Header -->
+<header>
+  <div class="header-inner">
+
+    <!-- Links: Logo -->
+    <div class="logo">
+      <span class="logo-icon">👕</span>
+      <span class="logo-text">KleiderHilfe</span>
+    </div>
+
+    <!-- Mitte: Globale Navigation -->
+    <nav class="global-nav">
+      <ul>
+        <li><a href="index.html">Startseite</a></li>
+        <li><a href="ueber-uns.html">Über uns</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+      </ul>
+    </nav>
+
+    <!-- Rechts: CTA Button -->
+    <div class="header-cta">
+      <a href="#registrierung" class="btn-spende">
+        👕 Jetzt spenden
+      </a>
+    </div>
+
+  </div>
+</header>
+
+
+  <!-- Main -->
+<main>
+
+  <!-- Lokale Navigation links -->
+  <nav class="local-nav" id="local-nav">
+    <ul>
+      <li><a href="#registrierung">Spende registrieren</a></li>
+      <li><a href="#ablauf">Ablauf</a></li>
+      <li><a href="#krisengebiete">Krisengebiete</a></li>
+      <li><a href="#kontakt">Kontakt</a></li>
+    </ul>
+  </nav>
+
+  <!-- Content -->
+  <div id="content">
+
+    <section id="registrierung">
+      <h1>Kleiderspende registrieren</h1>
+      <p>Helfen Sie mit - registrieren Sie Ihre Kleiderspende
+         und bestimmen Sie selbst, wohin sie geht.</p>
+
+      <!-- Formular -->
+      <form id="spenden-formular">
+
+        <!-- Modus-Auswahl -->
+        <div class="form-group">
+          <label>Art der Übergabe:</label>
+          <div class="radio-group">
+            <label>
+              <input type="radio" name="modus" value="übergabe" checked>
+              Persönliche Übergabe an der Geschäftsstelle
+            </label>
+            <label>
+              <input type="radio" name="modus" value="abholung">
+              Abholung durch Sammelfahrzeug
+            </label>
+          </div>
+        </div>
+
+        <!-- Nur bei Abholung sichtbar -->
+        <div class="form-group" id="adress-bereich">
+          <label for="strasse">Straße + Hausnummer:</label>
+          <input type="text" id="strasse" name="strasse"
+                 placeholder="Musterstraße 1">
+
+          <label for="plz">Postleitzahl:</label>
+          <input type="text" id="plz" name="plz"
+                 placeholder="67346" maxlength="5">
+
+          <label for="ort">Ort:</label>
+          <input type="text" id="ort" name="ort"
+                 placeholder="Speyer">
+        </div>
+
+        <!-- Immer sichtbar -->
+        <div class="form-group">
+          <label for="kleidung">Art der Kleidung:</label>
+          <select id="kleidung" name="kleidung">
+            <option value="">-- Bitte wählen --</option>
+            <option value="winterkleidung">Winterkleidung</option>
+            <option value="sommerkleidung">Sommerkleidung</option>
+            <option value="kinderkleidung">Kinderkleidung</option>
+            <option value="schuhe">Schuhe</option>
+            <option value="sonstiges">Sonstiges</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="krisengebiet">Krisengebiet:</label>
+          <select id="krisengebiet" name="krisengebiet">
+            <option value="">-- Bitte wählen --</option>
+            <option value="ukraine">Ukraine</option>
+            <option value="syrien">Syrien</option>
+            <option value="palestine">Palästina</option>
+            <option value="sudan">Sudan</option>
+          </select>
+        </div>
+
+        <button type="submit" class="btn-submit">
+          Spende registrieren
+        </button>
+
+      </form>
+    </section>
+
+    <section id="ablauf">
+      <h2>So funktioniert es</h2>
+      <p>Wählen Sie zwischen persönlicher Übergabe oder Abholung
+         durch unsere Sammelfahrzeuge.</p>
+    </section>
+
+    <section id="krisengebiete">
+      <h2>Aktuelle Krisengebiete</h2>
+      <p>Ihre Spende kann in eines der folgenden Krisengebiete gehen.</p>
+    </section>
+
+    <section id="kontakt">
+      <h2>Kontakt</h2>
+      <p>KleiderHilfe e.V. - Musterstraße 1 -67346 Speyer</p>
+    </section>
+
+  </div>
+
+</main>
+
+  <!-- Footer -->
+  <footer>
+    <nav class="footer-nav">
+      <ul>
+        <li><a href="#">Impressum</a></li>
+        <li><a href="#">Datenschutz</a></li>
+        <li><a href="#">Kontakt</a></li>
+      </ul>
+    </nav>
+    <p>© 2026 Kleiderhilfe e.V - Alle Rechte vorbehalten</p>
+  </footer>
+
+</body>
+
+</html>
