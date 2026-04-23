@@ -166,6 +166,72 @@ footer {
 }
 
 /* Responsive: Smartphone */
+@media screen and (max-width: 480px) {
+
+  header {
+    padding: 0.7em 1em;
+  }
+
+  .logo-text {
+    font-size: 18px;
+  }
+
+  .logo-icon {
+    font-size: 22px;
+  }
+
+  .btn-spende {
+    font-size: 12px;
+    padding: 0.4em 1em;
+  }
+
+  /* Navigation untereinander */
+  .global-nav ul {
+    gap: 25px;
+  }
+
+  /* Main weniger Padding */
+  main {
+    padding: 0 1em;
+    margin: 1em auto;
+  }
+
+/* Lokale Navigation kompakter */
+  .local-nav ul {
+    padding: 0.7em;
+  }
+
+/* Formular volle Breite */
+  .form-group input[type="text"],
+  .form-group select {
+    max-width: 100%;
+  }  
+
+  /* Button volle Breite */
+  .btn-submit {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Schriftgröße anpassen */
+  h1 { font-size: 22px; }
+  h2 { font-size: 18px; }
+  p  { font-size: 14px; }
+
+/* Footer kompakter */
+  footer {
+    padding: 1em;
+    font-size: 13px;
+  }
+
+  .footer-nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+}
+
+/* Responsive: Tablet */
 @media screen and (max-width: 768px) {
 
   main {
