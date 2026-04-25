@@ -315,3 +315,8 @@ footer {
 .btn-submit:hover {
   background-color: #1f5c38;
 }
+
+/* Addressbereich verstecken und mit Java Script nur einbelden, wenn die Option "Abholung" ausgewählt ist */
+#address-bereich {
+  display: none;
+}
