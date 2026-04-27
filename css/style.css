@@ -320,3 +320,20 @@ footer {
 #address-bereich {
   display: none;
 }
+
+/* Fehlermeldungen */
+.fehler-text {
+  color: red;
+  font-size: 13px;
+  display: none;
+}
+
+.fehler-text.sichtbar {
+  display: block;
+}
+
+/* Eingabefeld rot umranden bei Fehler */
+input.fehler {
+  border-color: red;
+  box-shadow: 0 0 0 2px rgba(192, 57, 43, 0,2);
+}
