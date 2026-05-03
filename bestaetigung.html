@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Bestätigung Kleiderhilfe</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="header-inner">
+            <div class="logo"></div>
+              <span class="logo-icon">👕</span>
+              <span class="logo-text">KleiderHilfe</span>              
+        </div>
+        <nav class="global-nav">
+            <ul>
+              <li><a href="index.html">Startseite</a> </li>
+              <li><a href="ueber-uns.html">Über uns</a> </li>
+              <li><a href="kontakt.html">Kontakt</a> </li>
+            </ul>
+        </nav>
+        <div class="header-cta">
+            <a href="index.html#registrierung" class="btn-spende">
+                👕 Jetzt spenden
+            </a>
+        </div>
+    </header>
+
+    <!-- Main -->
+    <main>
+        <div id="content" style="max-width: 700px; margin: 0 auto">
+
+            <section id="bestaetigung"></section>
+
+            <div class="success-icon">✅</div>
+            <h1>Vielen Dank für Ihre Spende!</h1>
+            <p>Ihre Kleiderspende wurde erfolgreich registriert.
+               Hier ist eine Zusammenfassung Ihrer Angaben:</p>
+
+            <div class="zusammenfassung">
+
+            <div class="zusammenfassung-zeile">    
+                <span class="zusammenfassung-label">Art der Übergabe:</span>
+                <span class="zusammenfassung-wert" id="erg-modus"></span>
+        </div>
+
+            <div class="zusammenfassung-zeile" id="erg-adresse-zeile">
+                <span class="zusammenfassung-label">Abholadresse:</span>
+                <span class="zusammenfassung-wert" id="erg-adresse"></span>
+        </div>
+
+        <div class="zusammenfassung-zeile">
+                <span class="zusammenfassung-label">Art der Kleidung:</span>
+                <span class="zusammenfassung-wert" id="erg-kleidung"></span>
+        </div>
+
+        <div class="zusammenfassung-zeile">
+                <span class="zusammenfassung-label">Krisengebiet:</span>
+                <span class="zusammenfassung-wert" id="erg-krisengebiet"></span>
+        </div>
+
+        <div class="zusammenfassung-zeile">
+                <span class="zusammenfassung-label">Datum & Uhrzeit :</span>
+                <span class="zusammenfassung-wert" id="erg-datum"></span>
+        </div>
+
+        <div class="zusammenfassung-zeile">
+                <span class="zusammenfassung-label">Ort:</span>
+                <span class="zusammenfassung-wert" id="erg-ort"></span>
+        </div>
+
+    </div>
+
+    <a href="index.html" class="btn-submit"
+        style="display: inline-block; margin-top: 2em; text-decoration: none;">
+        Weitere Spende registrieren
+    </a>
+
+</section>
+
+</div>
+</main>
+
+    <!-- Footer -->
+    <footer>
+      <nav class="footer-nav">
+        <ul>
+          <li><a href="#">Impressum</a></li>
+          <li><a href="#">Datenschutz</a></li>
+          <li><a href="#">Kontakt</a></li>
+        </ul>
+      </nav>
+      <p>© 2026 Kleiderhilfe e.V - Alle Rechte vorbehalten</p>
+    </footer>
+
+    <script src="js/bestaetigung.js"></script>
+</body>
+
+</html>
