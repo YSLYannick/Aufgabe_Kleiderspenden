@@ -308,8 +308,10 @@ footer {
   border-radius: 20px;
   font-size: 15px;
   font-weight: bold;
+  display: inline-block;
   cursor: pointer;
   transition: background-color 0.2s;
+  width: auto;
 }
 
 .btn-submit:hover {
@@ -317,7 +319,7 @@ footer {
 }
 
 /* Addressbereich verstecken und mit Java Script nur einbelden, wenn die Option "Abholung" ausgewählt ist */
-#address-bereich {
+#addresse-bereich {
   display: none;
 }
 
