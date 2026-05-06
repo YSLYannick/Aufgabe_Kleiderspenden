@@ -9,8 +9,14 @@ function modus_aktualisieren() {
 
     if (ausgewaehlt.value === 'abholung') {
         adresseBereich.style.display = 'flex';
+        document.getElementById('strasse').required = true;
+        document.getElementById('plz').required = true;
+        document.getElementById('ort').required = true;
     } else {
         adresseBereich.style.display = 'none';
+        document.getElementById('strasse').required = false;
+        document.getElementById('plz').required = false;
+        document.getElementById('ort').required = false;
     }
 }
 
